@@ -1,0 +1,52 @@
+@import "./base/reset";
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 3.125rem;
+  padding-inline: 1.5rem;
+  display: grid;
+  gap: 1.875rem;
+  grid-template-rows: auto 1fr;
+
+  .heading {
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 2.125rem;
+    line-height: 2.563rem;
+  }
+
+  .list {
+    overflow-y: auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      display: none; /* for Safari and Chrome */
+    }
+
+    scrollbar-width: none; /* Firefox */
+
+    .tile {
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: #1c1c1e;
+
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .description {
+        color: #a0a0a0;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+    }
+  }
+}
