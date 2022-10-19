@@ -1,0 +1,23 @@
+{
+  "name": "frontend-interview",
+  "version": "1.0.0",
+  "description": "- [API](https://jsonplaceholder.typicode.com/)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellow-developers/frontend-interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fellow-developers/frontend-interview/issues"
+  },
+  "homepage": "https://github.com/fellow-developers/frontend-interview#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
