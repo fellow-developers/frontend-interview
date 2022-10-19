@@ -1,0 +1,54 @@
+@import "./base/reset";
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+
+  .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #1c1c1e;
+  }
+
+  .list {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 80%;
+
+    .tile {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .link {
+        color: #a0a0a0;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.25rem;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+
+      .figma {
+        min-width: 80%;
+        min-height: 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
