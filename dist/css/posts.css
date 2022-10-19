@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #383535;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 3.125rem;
+  padding-inline: 1.5rem;
+  display: grid;
+  gap: 1.875rem;
+  overflow: hidden;
+  grid-template-rows: auto 1fr;
+}
+main .heading {
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 2.563rem;
+}
+main .list {
+  overflow-y: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  scrollbar-width: none; /* Firefox */
+}
+main .list::-webkit-scrollbar {
+  display: none; /* for Safari and Chrome */
+}
+main .list .tile {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #1c1c1e;
+}
+main .list .tile .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+main .list .tile .description {
+  color: #a0a0a0;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+main .list .tile:hover {
+  background-color: #4a4a4a;
+}/*# sourceMappingURL=posts.css.map */
